@@ -1,17 +1,15 @@
 #include <stdio.h>
 
-int main()
-{
-    int base, exponent, result = 1;
+int main(){
+    long long int base, exponent, result = 1;
 
     printf("Enter the base: ");
     scanf("%d", &base);
 
     printf("Enter the exponent: ");
     scanf("%d", &exponent);
-
-    for (int i = 1; i <= exponent; i++)
-    {
+    int i;
+    for ( i = 1; i <= exponent; i++){
         result *= base;
     }
 
